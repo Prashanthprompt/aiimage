@@ -123,7 +123,7 @@ const VideoModal = ({
       <div className="video-images-container">
         <video
           controls
-          autoPlay
+          // autoPlay
           className={
             displayProperties ? "video-player" : "initial-video-player"
           }
@@ -183,7 +183,7 @@ const VideoModal = ({
         }
         onClick={handleAllDisplay}
       >
-        Want to replace your image or your kid image?
+        Want to replace your kid in this video?
       </button>
       <div
         className={
