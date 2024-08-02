@@ -1,0 +1,236 @@
+.fresh-videos-header {
+  font-family: "Nunito", sans-serif;
+  margin-left: 15px;
+  color: #f2f2f2;
+}
+
+.language-buttons button {
+  position: relative;
+  left: 20px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid #5851d3;
+  outline: none;
+  background: transparent;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.fresh-videos-display-container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: hidden;
+  max-height: calc(80% - 80px);
+  margin-left: 18px;
+}
+
+.fresh-videos-video-thumbnail {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.fresh-videos-video-container {
+  margin: 20px 8px 20px 8px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.fresh-videos-video-dimensions {
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  border: 2px solid #5851d3;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.fresh-videos-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.fresh-videos-video-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fresh-videos-video-player {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fresh-videos-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.fresh-videos-images-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fresh-videos-image-and-input-element {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #5851d3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fresh-videos-d3-image {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fresh-videos-image-and-input-element img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #5851d3;
+  border-radius: 10px;
+  display: block;
+}
+
+.fresh-videos-upload-label {
+  border: 1px solid #5851d3;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.fresh-videos-submit-btn {
+  background: #5851d3;
+  border: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .fresh-videos-header {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .language-buttons button {
+    left: 10px;
+    font-size: 14px;
+    width: 70px;
+  }
+
+  .fresh-videos-display-container {
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .fresh-videos-video-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .fresh-videos-video-dimensions {
+    width: 150px;
+    height: 200px;
+  }
+
+  .fresh-videos-video-player {
+    width: 100%;
+  }
+
+  .fresh-videos-image-and-input-element {
+    flex-direction: column;
+  }
+
+  .fresh-videos-upload-label {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fresh-videos-header {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .language-buttons button {
+    left: 15px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .fresh-videos-display-container {
+    margin-left: 12px;
+    gap: 10px;
+  }
+
+  .fresh-videos-video-container {
+    margin: 15px 0;
+  }
+
+  .fresh-videos-video-dimensions {
+    width: 180px;
+    height: 230px;
+  }
+
+  .fresh-videos-video-player {
+    width: 100%;
+  }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1025px) {
+  .fresh-videos-header {
+    font-size: 20px;
+  }
+
+  .language-buttons button {
+    left: 20px;
+    font-size: 16px;
+  }
+
+  .fresh-videos-video-container {
+    margin: 20px 8px;
+  }
+
+  .fresh-videos-video-dimensions {
+    width: 200px;
+    height: 250px;
+  }
+}

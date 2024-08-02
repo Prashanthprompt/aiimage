@@ -1,0 +1,136 @@
+.confirm-to-save-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.confirm-to-save-title {
+  position: relative;
+  top: 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.confirm-to-save-video-dimensions {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.confirm-to-save-buttons-container {
+  position: relative;
+  top: 20px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.confirm-to-save-btn {
+  border: none;
+  outline: none;
+  background: #5851d3;
+  color: #f2f2f2;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-2 {
+  width: 150px;
+}
+
+/* Responsive Styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .confirm-to-save-title {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  .confirm-to-save-video-dimensions {
+    width: 100%;
+    height: auto;
+  }
+
+  .confirm-to-save-buttons-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .confirm-to-save-btn {
+    width: 50px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .btn-2 {
+    width: 120px;
+  }
+}
+
+/* Tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .confirm-to-save-title {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+  }
+
+  .confirm-to-save-video-dimensions {
+    width: 500px;
+    height: 300px;
+  }
+
+  .confirm-to-save-buttons-container {
+    width: 500px;
+    justify-content: space-around;
+  }
+
+  .confirm-to-save-btn {
+    width: 100px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .btn-2 {
+    width: 130px;
+  }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1025px) {
+  .confirm-to-save-title {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+
+  .confirm-to-save-video-dimensions {
+    width: 600px;
+    height: 350px;
+  }
+
+  .confirm-to-save-buttons-container {
+    width: 600px;
+  }
+
+  .confirm-to-save-btn {
+    font-size: 16px;
+    padding: 0px;
+  }
+
+  .btn-2 {
+    width: 150px;
+  }
+}

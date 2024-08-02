@@ -1,0 +1,214 @@
+.search-input-modal {
+  position: sticky;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 16px;
+  top: 10px;
+  border-radius: 10px;
+  border: 1px solid #5851d3;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-results {
+  position: relative;
+  max-width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: calc(80% - 80px);
+}
+
+.search-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-video-thumbnail {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.search-video-dimensions {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid #5851d3;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-input-modal {
+    width: 90%;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+
+  .search-video-dimensions {
+    width: 200px;
+    height: 120px;
+  }
+
+  .search-close-button {
+    width: 100px;
+  }
+
+  .videoplay-video-player {
+    width: 100%;
+    height: auto;
+  }
+
+  .videoplay-image-and-input-element img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .videoplay-upload-label {
+    font-size: 14px;
+  }
+
+  .videoplay-submit-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input-modal {
+    width: 80%;
+    font-size: 12px;
+    margin-top: 35px;
+  }
+
+  .search-video-dimensions {
+    width: 100%;
+    height: auto;
+  }
+
+  .videoplay-image-and-input-element {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoplay-image-and-input-element img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .search-close-button {
+    width: 100px;
+  }
+
+  .videoplay-upload-label {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .videoplay-submit-btn {
+    font-size: 12px;
+  }
+
+  .videoplay-d3-image {
+    margin-top: 20px;
+  }
+}
+
+/* Additional Classes for Modal Components */
+.videoplay-video-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.videoplay-video-player {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.videoplay-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.videoplay-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.videoplay-image-and-input-element {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #5851d3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.videoplay-d3-image {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.videoplay-image-and-input-element img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #5851d3;
+  border-radius: 10px;
+  display: block;
+}
+
+.videoplay-upload-label {
+  border: 1px solid #5851d3;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #5851d3;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-close-button {
+  width: 100px;
+}
+
+.videoplay-submit-btn {
+  background: #5851d3;
+  border: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.ReactModal__Overlay {
+  z-index: 1000; /* Adjust as needed to ensure it's on top */
+}
