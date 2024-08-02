@@ -13,8 +13,8 @@ const SavedVideos = () => {
       <div className="savedvideos-left-panel-container">
         <p className="left-panel-title">Saved Videos</p>
         <div className="left-videos-container">
-          {savedVideos.map((video) => (
-            <video className="left-video-dimension">
+          {savedVideos.map((video, index) => (
+            <video className="left-video-dimension" key={index}>
               <source src={video.url} title={video.title} />
             </video>
           ))}
@@ -27,7 +27,7 @@ const SavedVideos = () => {
             <div className="right-video-container">
               <video className="right-video-dimension" controls>
                 <source
-                  src={savedVideos[0]?.url.video}
+                  src={savedVideos[0]?.url}
                   title={savedVideos[0]?.title}
                   type="video/mp4"
                 />

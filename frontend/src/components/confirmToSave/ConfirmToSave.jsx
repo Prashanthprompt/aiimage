@@ -31,7 +31,7 @@ const ConfirmToSave = ({ videos }) => {
     <div className="confirm-to-save-main-container">
       <p className="confirm-to-save-title">Enjoy your kid in Action</p>
       <video className="confirm-to-save-video-dimensions" controls>
-        <source src={video} />
+        <source src={video} type="video/mp4" />
       </video>
       <div className="confirm-to-save-buttons-container">
         <button className="confirm-to-save-btn" onClick={handleSave}>

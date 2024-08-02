@@ -93,6 +93,15 @@
   object-fit: cover;
 }
 
+.home-icon {
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #5851d3;
+}
+
 .close-button {
   position: absolute;
   top: 10px;
@@ -228,6 +237,10 @@
     width: 100%;
   }
 
+  .home-icon {
+    right: 30%;
+  }
+
   .close-button {
     width: 23%;
   }
@@ -292,6 +305,10 @@
 
   .initial-video-player {
     width: 70%;
+  }
+
+  .home-icon {
+    right: 130px;
   }
 
   .close-button {

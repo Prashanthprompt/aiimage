@@ -20,13 +20,13 @@ const videos = [
   {
     title: "Clap",
     url: video1,
-    description: "Lorem ipsum",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     lang: "english",
   },
   {
     title: "Numbers",
     url: video2,
-    description: "Lorem ipsum",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     lang: "english",
   },
 ];

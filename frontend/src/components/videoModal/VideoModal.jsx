@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMdCloudUpload } from "react-icons/io";
 import { FaLongArrowAltRight } from "react-icons/fa";
-// import "./VideoModal.css";
+import { IoHome } from "react-icons/io5";
+// import { FaArrowRightToBracket } from "react-icons/fa6";
+import { SiConvertio } from "react-icons/si";
+// import { TbArrowBackUpDouble } from "react-icons/tb";
+import "./VideoModal.css";
 import "../videos/Videos.css";
 // import axios from "axios";
 
@@ -117,6 +121,10 @@ const VideoModal = ({
       style={customStyles}
       contentLabel="Video Modal"
     >
+      {/* <TbArrowBackUpDouble onClick={() => navigate(-1)} /> */}
+      <Link to="/" className="home-icon" onClick={closeModal}>
+        <IoHome />
+      </Link>
       <button className="close-button" onClick={closeModal}>
         Close
       </button>
@@ -149,27 +157,49 @@ const VideoModal = ({
           <div className="image-and-input-element d3-image">
             <img src={uploadedImages[0]} alt="image1" />
             <div style={{ position: "relative", display: "inline-block" }}>
-              <FaLongArrowAltRight
+              {/* <FaLongArrowAltRight
                 style={{
                   fontSize: "100px",
                   color: "#5851d3",
                   margin: "0 20px 0 20px",
                 }}
                 // onClick={handle3dTransform}
-              />
-              <span
+              /> */}
+              <div className="convertio-wrapper">
+                <SiConvertio
+                  style={{
+                    fontSize: "25px",
+                    color: "#5851d3",
+                    margin: "0 20px 0 20px",
+                    cursor: "pointer",
+                  }}
+                />
+                <span className="transform-text">Transform to 3D</span>
+              </div>
+              {/* <button
                 style={{
-                  position: "absolute",
-                  top: "48%",
-                  left: "45%",
-                  transform: "translate(-50%, -50%)",
-                  color: "#ffffff",
-                  fontSize: "8px",
-                  fontWeight: "bold",
+                  width: "100px",
+                  background: "none",
+                  border: "1px solid #5851d3",
+                  outline: "none",
                 }}
-              >
-                Transform to 3D
-              </span>
+              > */}
+              {/* <span
+                  style={{
+                    position: "absolute",
+                    top: "48%",
+                    left: "45%",
+                    transform: "translate(-50%, -50%)",
+                    color: "#ffffff",
+                    fontSize: "8px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Transform to 3D
+                </span> */}
+              {/* Transform to 3D
+                <FaArrowRightToBracket />
+              </button> */}
             </div>
             <img src="https://via.placeholder.com/150" alt="image2" />
           </div>

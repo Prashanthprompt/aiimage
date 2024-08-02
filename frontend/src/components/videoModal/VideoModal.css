@@ -1,0 +1,24 @@
+.convertio-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.transform-text {
+  display: none;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #5851d3;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+.convertio-wrapper:hover .transform-text {
+  display: block;
+}

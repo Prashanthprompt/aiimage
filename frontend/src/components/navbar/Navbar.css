@@ -158,6 +158,12 @@ button {
     display: flex;
   }
 
+  .saved-videos-link:hover {
+    border: 1px solid #f2f2f2;
+    padding: 0px 5px 0px 5px;
+    border-radius: 4px;
+  }
+
   /* .saved-videos-link,
   .search-input, */
   .login-btn {
@@ -191,6 +197,12 @@ button {
 
   .saved-videos-link {
     font-size: 16px;
+  }
+
+  .saved-videos-link:hover {
+    border: 1px solid #f2f2f2;
+    padding: 0px 5px 0px 5px;
+    border-radius: 4px;
   }
 
   .search-input {
@@ -254,5 +266,11 @@ button {
 
   .menu-items {
     display: flex !important;
+  }
+
+  .saved-videos-link:hover {
+    border: 1px solid #f2f2f2;
+    padding: 0px 5px 0px 5px;
+    border-radius: 4px;
   }
 }

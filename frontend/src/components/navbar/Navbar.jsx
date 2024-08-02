@@ -50,6 +50,11 @@ const Navbar = ({
 
       <div className={`menu-items ${menuOpen ? "show" : ""}`}>
         {loginStatus && (
+          <Link to="/" className="saved-videos-link" onClick={closeMenu}>
+            Home
+          </Link>
+        )}
+        {loginStatus && (
           <Link
             to="/saved-videos"
             className="saved-videos-link"
